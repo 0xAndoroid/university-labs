@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Andriy/Coding/C++/university_labs/lab2.1/array_processor.cpp">
+			<Option target="lab2_1"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Andriy/Coding/C++/university_labs/lab2.1/array_processor.h">
+			<Option target="lab2_1"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Andriy/Coding/C++/university_labs/lab2.1/main.cpp">
 			<Option target="lab2_1"/>
 		</Unit>
