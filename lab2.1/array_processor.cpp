@@ -36,6 +36,7 @@ void output(const int *a, int len) {
 //64.	перед останнім елементом, значення якого не є простим числом. Якщо всі числа в масиві прості, додати в початок масиву.
 int process64(int *begin, int *mid, int *end) {
     int input;
+    std::cout << "Вкажіть число, яке потрібно вставити" << "\n";
     std::cin >> input;
     try {
         int breakPoint = 0;
@@ -63,6 +64,7 @@ int process64Backend(int *begin, int *mid, int *end, int input, int &breakPoint)
 //89.	перед останнім елементом, значення якого не є простим числом, і перед кожним елементом, значення якого є простим числом.
 int process89(int *begin, int *mid, int *end) {
     int input, len, breakPoint = 0;
+    std::cout << "Вкажіть число, яке потрібно вставити" << "\n";
     std::cin >> input;
     try {
         len = process64Backend(begin, mid, end, input, breakPoint);
