@@ -1,6 +1,7 @@
 #include <iostream>
 #include "array_processor.h"
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -41,13 +42,9 @@ int main() {
         if(!ofStream.good()) cout << "Ви ввели некоректний шлях" << "\n";
     } while (!ofStream.good());
     int variantExecution = enterVariantExecution();
-    cout << "MEMORY ALLOC: " << 0 << " " << 1 << "\n";
-    int *a = new int[1];
-    int *begin = a;
-    int *mid = a;
-    int *end = a+1;
-    input(ifStream, begin, mid, end);
-    if(variantExecution == 64) process64(begin, mid, end);
-    else if(variantExecution == 89) process89(begin, mid, end);
-    output(outputFile, begin, mid, end);
+    vector<int> vec;
+    input(ifStream, vec);
+    if(variantExecution == 64) process64(vec);
+    else if(variantExecution == 89) process89(vec);
+    output(outputFile, vec);
 }

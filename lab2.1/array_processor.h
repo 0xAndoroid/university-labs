@@ -1,10 +1,9 @@
 #include <fstream>
+#include <vector>
 
-void input(std::ifstream& stream, int *&begin, int *&mid, int *&end);
-void output(std::string& path, int *&begin, int *&mid, int *&end);
-int process64(int *&begin, int *&mid, int *&end);
-int process64Backend(int *&begin, int *&mid, int *&end, int input, int &breakPoint);
-int process89(int *&begin, int *&mid, int *&end);
+void input(std::ifstream& stream, std::vector<int> &v);
+void output(std::string& path, const std::vector<int>& v);
+void process64(std::vector<int> &v);
+void process64Backend(std::vector<int> &v, int input, std::vector<int>::iterator breakPoint);
+void process89(std::vector<int> &v);
 bool isPrime(int n);
-void shiftArray(int *&begin, int start, int len);
-void increaseLength(int *&begin, int *&mid, int *&end);
